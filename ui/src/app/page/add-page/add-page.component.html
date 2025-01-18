@@ -1,0 +1,8 @@
+<body>
+    <form [formGroup]="addForm" (ngSubmit)="add()">
+        <input type="text" formControlName="title">
+        <input type="text" formControlName="author">
+        <input type="text" formControlName="pages">
+        <input type="submit" value="Add">
+    </form>
+</body>

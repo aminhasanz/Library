@@ -1,4 +1,7 @@
 ﻿using Dapper;
+using Library.Business;
+using Library.Model;
+using Library.Model.Book;
 using Microsoft.Data.SqlClient;
 
 namespace Library
@@ -7,8 +10,7 @@ namespace Library
     {
         static void Main(string[] args)
         {
-            string connectionString = "Data Source=.;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
-            SqlConnection connection = new SqlConnection(connectionString);
+            
         }
     }
 }

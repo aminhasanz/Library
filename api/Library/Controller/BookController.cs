@@ -10,6 +10,7 @@ namespace Library.Controller
     public class BookController : ControllerBase
     {
         private BookBusiness bookBusiness;
+
         public BookController(BookBusiness bookBusiness)
         {
             this.bookBusiness = bookBusiness;
@@ -30,11 +31,11 @@ namespace Library.Controller
         return bookBusiness.GetBookBusiness(bookId);
         }*/
 
-        [HttpGet("getbooks")]
+        /*[HttpGet("getbooks")]
         public BusinessResult<IEnumerable<BookTable>> GetBooks()
         {
             return bookBusiness.GetBooksBusiness();
-        }
+        }*/
 
     }
 }

@@ -9,6 +9,10 @@ namespace Library.Business
     {
         private BookData bookData;
 
+        public BookBusiness()
+        {
+        }
+
         public BookBusiness(BookData bookData) 
         {
             this.bookData = bookData;

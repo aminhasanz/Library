@@ -15,7 +15,9 @@ namespace Library.Controller
         {
             this.bookBusiness = bookBusiness;
         }
-        
+
+
+
 
         [HttpPost("add")]
         public BusinessResult<int> Add(BookModel model)
@@ -23,19 +25,17 @@ namespace Library.Controller
             return this.bookBusiness.AddBusiness(model);
         }
 
-        /*[HttpGet("getbook")]
-        public BusinessResult<BookTable> GetBook(int request)
+        [HttpGet("getbook")]
+        public BusinessResult<BookTable> GetBook(int bookId)
         {
-            int bookId = int.Parse(Book.Id.Name);
+            return bookBusiness.GetBookBusiness(bookId);
+        }
 
-        return bookBusiness.GetBookBusiness(bookId);
-        }*/
-
-        /*[HttpGet("getbooks")]
+        [HttpGet("getbooks")]
         public BusinessResult<IEnumerable<BookTable>> GetBooks()
         {
             return bookBusiness.GetBooksBusiness();
-        }*/
-
+        }
     }
+
 }

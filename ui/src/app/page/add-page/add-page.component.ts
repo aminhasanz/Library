@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { FormControl, FormGroup, ReactiveFormsModule } from "@angular/forms";
-import { BookAddModel } from "../../model/book-add-model";
+import { BookAddModel } from "../../model/book-model";
 import { BookService } from "../../service/book-service";
 import { Router } from "@angular/router";
 
@@ -26,8 +26,9 @@ export class AddPageComponent {
             author: this.addForm.value.author as string,
             pages: this.addForm.value.pages as string
         }
+
+        
     }
 
-    console: any.log(data: any);
 
 }
